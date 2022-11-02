@@ -65,13 +65,10 @@ public class Schemas {
         if (resourceType != null && resourceType.getSchemaExtensions() != null) {
             for (SchemaExtensionName extensionName: resourceType.getSchemaExtensions()) {
                 Schema extension = byId.get(extensionName.getSchema());
-                if (extension == null) {
-                    extension = "test";
-                }
-                if (extension == null) {
-                    throw new ScimApiException("Could not find Schema for Extension '"
-                            + extensionName.getSchema() + "' for Core Schema " + schema.getId());
-                }
+                //if (extension == null) {
+                //    throw new ScimApiException("Could not find Schema for Extension '"
+                //            + extensionName.getSchema() + "' for Core Schema " + schema.getId());
+                //}
 
                 if (schema.getId().equals(extensionName.getSchema())) {
                     throw new ScimApiException("SCIM Schema extension cannot be itself, " +
