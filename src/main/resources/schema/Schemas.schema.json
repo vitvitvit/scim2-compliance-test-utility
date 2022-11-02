@@ -82,7 +82,7 @@
                         "boolean",
                         "decimal",
                         "integer",
-                        "dateTime",
+                        "datetime",
                         "reference",
                         "complex",
                         "binary"
