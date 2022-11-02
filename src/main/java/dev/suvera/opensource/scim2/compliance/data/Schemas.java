@@ -61,7 +61,8 @@ public class Schemas {
 
         ResourceType resourceType = resourceTypes.getResourceBySchema(schema.getId());
         List<SchemaExtension> extensions = new ArrayList<>();
-
+        
+        resourceType.getSchemaExtensions() = null;
         if (resourceType != null && resourceType.getSchemaExtensions() != null) {
             for (SchemaExtensionName extensionName: resourceType.getSchemaExtensions()) {
                 Schema extension = byId.get(extensionName.getSchema());
