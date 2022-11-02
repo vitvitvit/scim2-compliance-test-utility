@@ -9,8 +9,8 @@ import java.util.Set;
  */
 public class ScimConstants {
     public static final String SCHEMA_USER = "urn:ietf:params:scim:schemas:core:2.0:User";
-    public static final String SCHEMA_ENTERPRISE_USER =
-            "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User";
+    //public static final String SCHEMA_ENTERPRISE_USER =
+    //        "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User";
     public static final String SCHEMA_GROUP = "urn:ietf:params:scim:schemas:core:2.0:Group";
     public static final String SCHEMA_SERVICE_PROVIDER_CONFIG =
             "urn:ietf:params:scim:schemas:core:2.0:ServiceProviderConfig";
