@@ -66,7 +66,7 @@ public class Schemas {
             for (SchemaExtensionName extensionName: resourceType.getSchemaExtensions()) {
                 Schema extension = byId.get(extensionName.getSchema());
                 if (extension == null) {
-                    extension = 1;
+                    extension = "test";
                 }
                 if (extension == null) {
                     throw new ScimApiException("Could not find Schema for Extension '"
