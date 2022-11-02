@@ -33,6 +33,7 @@
         }
     },
     "required": [
+        "schemas",
         "id",
         "meta",
         "attributes"
